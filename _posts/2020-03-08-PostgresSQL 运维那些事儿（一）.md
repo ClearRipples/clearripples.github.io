@@ -11,6 +11,7 @@ tags:                               #标签
     - SQL
 ---
 
+
 # 写在开始
 > 项目中使用 PostgreSQL 作为数据的存储。项目开发中经常会有进行数据库创建或修改的情况。很不幸因为集群是我搭建的，然后项目数据库相关的东西，都要我来处理（基础设施让开发人员来搞就是吃力不讨好的活，各种原因，哎~~）后面我会陆续将我项目中使用的常用 SQL 整理出来，也是个总结吧。也希望能帮到别人。集群的构建上我会花个时间全部整理出来。
 
@@ -18,7 +19,8 @@ tags:                               #标签
 > 在项目的需求、系统设计讨论清楚后，假定项目选定 Postgre SQL 作为基本的关系数据库，那么建库将会是第一件事。那么是不是直接
 `CREATE DATABASE xxxx` 就可以了呢? 当然不是，没这么简单。先来搞清楚 CREATE DATABASE 的几个参数的含义吧。
 
-- **创建数据库**
+#### 创建数据库
+
 ```
 CREATE DATABASE yysg        -- 根据实际项目起名
 WITH OWNER = yysg           -- 数据库的所属人
@@ -40,7 +42,7 @@ IS 'XXX database name';
 
 > 建库完成后, 得给数据库添加个角色，用于配置到连接串代码里
 
-- **创建角色**
+#### 创建角色
 
 ```
 create user XXX with password 'XXXXXX';
@@ -55,7 +57,7 @@ create role XXX with password 'XXXXX' login;
 alter role XXX  login;
 ```
 
-## 修改整个库的 owner
+#### 修改整个库的 owner
 > 如果很不幸的建好库后，没有给库设置对的角色，并且还有表，函数的 owner 也不是期望的，可以通过下面的匿名 function 进行一次性修改完成
 
 ```
@@ -86,6 +88,8 @@ BEGIN
 END
 $$;
 ```
+
+
 
 
 
