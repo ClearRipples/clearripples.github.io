@@ -50,7 +50,7 @@ create user XXX with password 'XXXXXX';
 
 create role XXX with password 'XXXXX' login;
 ```
-==注意：使用create role时，需要携带  login参数，否则将无法登录，如果忘记可使用命令修改：==
+**注意：使用create role时，需要携带  login参数，否则将无法登录，如果忘记可使用命令修改：**
 
 ```
 alter role XXX  login;
