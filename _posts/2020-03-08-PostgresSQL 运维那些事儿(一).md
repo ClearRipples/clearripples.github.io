@@ -1,12 +1,12 @@
 ---
-layout:     post                    # 使用的布局（不需要改）
+layout:     post                   
 title:      PostgresSQL 运维那些事儿(一)
 subtitle:   创建角色，建库,修改 owner
-date:       2020-03-08              # 时间
-author:     Wright Liang            # 作者
-header-img: img/post-bg-debug.png    #这篇文章标题背景图片
-catalog: true                       # 是否归档
-tags:                               #标签
+date:       2020-03-08              
+author:     Wright Liang            
+header-img: img/post-bg-debug.png
+catalog: true                   
+tags:                               
     - Postgres SQl
     - SQL
 ---
