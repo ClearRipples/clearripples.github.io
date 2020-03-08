@@ -1,6 +1,6 @@
 ---
 layout:     post                    # 使用的布局（不需要改）
-title:      PostgresSQL 运维那些事儿（一）
+title:      PostgresSQL 运维那些事儿(一)
 subtitle:   创建角色，建库,修改 owner
 date:       2020-03-08              # 时间
 author:     Wright Liang            # 作者
