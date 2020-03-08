@@ -4,7 +4,7 @@ title:      PostgresSQL 运维那些事儿(一)       # 标题
 subtitle:   创建角色，建库,修改 owner
 date:       2020-03-08              # 时间
 author:     Wright Liang            # 作者
-header-img: img/post-bg-2015.jpg    #这篇文章标题背景图片
+header-img: img/post-bg-postgres.png    #这篇文章标题背景图片
 catalog: true                       # 是否归档
 tags:                               #标签
     - Postgres SQl
