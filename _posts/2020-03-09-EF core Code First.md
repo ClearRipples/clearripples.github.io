@@ -4,7 +4,7 @@ title:      Ef Core Code First
 subtitle:   Ef Core 基本操作
 date:       2020-03-09
 author:     Wright Liang
-header-img: img/post-bg-debug.png
+header-img: img/post-bg-efcore.png
 catalog: true
 tags:
     - .net core
