@@ -26,7 +26,7 @@ tags:
 10.200.50.65 gs-server-7296
 ```
 
-两台服务器的角色分别如下：
+> 两台服务器的角色分别如下：
 
 ```
 gs-server-7297: 主服务器
@@ -72,12 +72,12 @@ sudo vim /var/lib/pgsql/10/data/pg_hba.conf
 host    replication     pgrepuser       0.0.0.0/0               md5
 ```
 
-- 主服务器配置好后，==**需要重启数据库**==
+- 主服务器配置好后，**需要重启数据库**
 
 ```
 sudo systemctl restart postgresql-10.service
 ```
-- ==**生产服务器上，则执行如下**==
+- **生产服务器上，则执行如下**
 >若在生产环境中没有条件进行数据库重启，也可以使用 pg_ctl reload 指令重新加载配置
 ```
 sudo systemctl reload postgresql-10
