@@ -12,9 +12,9 @@ tags:
 
 ## 目录
 - [单机安装](https://hongbo.tech/2020/03/18/PostgreSQL-%E9%9B%86%E7%BE%A4%E4%B9%8B%E5%8D%95%E6%9C%BA%E5%AE%89%E8%A3%85/)
-- [基于流式的 wal 数据复制功能搭建主/热备数据库集群]()
-- [pgpool工具高可用]()
-- [配置调优]()
+- [基于流式的 wal 数据复制功能搭建主/热备数据库集群](https://hongbo.tech/2020/03/19/PostgreSql-%E9%9B%86%E7%BE%A4%E4%B9%8B%E6%B5%81%E5%A4%8D%E5%88%B6%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA/)
+- pgpool工具高可用
+- 配置调优
 
 ---
 ## 1. 目标
