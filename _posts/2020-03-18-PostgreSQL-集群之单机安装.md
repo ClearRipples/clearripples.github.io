@@ -1,5 +1,3 @@
-
-```
 ---
 layout:     post
 title:      PostgreSQL 集群之单机安装
@@ -11,7 +9,6 @@ catalog: true
 tags:
     - PostgreSQL
 ---
-```
 
 ## 目录
 - [单机安装](https://hongbo.tech/2020/03/18/PostgreSQL-%E9%9B%86%E7%BE%A4%E4%B9%8B%E5%8D%95%E6%9C%BA%E5%AE%89%E8%A3%85/)
