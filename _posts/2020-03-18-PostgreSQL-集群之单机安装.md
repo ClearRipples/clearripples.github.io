@@ -4,7 +4,7 @@
 layout:     post
 title:      PostgreSQL 集群之单机安装
 subtitle:   Centos 7 单机安装
-date:       2020-03-09
+date:       2020-03-18
 author:     Wright Liang
 header-img: img/post-bg-debug.png
 catalog: true
@@ -13,7 +13,12 @@ tags:
 ---
 ```
 
-
+## 目录
+- [单机安装](https://hongbo.tech/2020/03/18/PostgreSQL-%E9%9B%86%E7%BE%A4%E4%B9%8B%E5%8D%95%E6%9C%BA%E5%AE%89%E8%A3%85/)
+- [基于流式的 wal 数据复制功能搭建主/热备数据库集群]()
+- [pgpool工具高可用]()
+- [配置调优]()
+---
 ## 1. 目标
 搭建一个全新的集群，用于业务系统的分库，预计需要支持到的数据库为 1000+。需要达到一下目标
 - 高可用：数据库服务器可以一起工作，这样如果主要的服务器失效则允许一个第二服务器快速接手它的任务
@@ -28,12 +33,7 @@ tags:
 
 ## 3. 系统安装、配置
 - Centos 7 安装
-> 如果是新申请的机器，这时候是没有外网的，需要设置一下公司的代理, 配置为
-https://gitlab.gridsum.com/gaotao/research/issues/5
 
-```
-sudo sh -c "$(wget http://yum.op.internal.gridsumdissector.com/idc_share/proxychains-ng/install_proxychains.sh -O -)"
-```
 ### 3.1 配置 yum 源
 > 到官网选择对应的版本，得到相关repos的连接
 https://www.postgresql.org/download/linux/redhat/
@@ -230,7 +230,7 @@ List of databases
 ```
 sudo su - postgres
 psql
-ALTER USER postgres PASSWORD '123qwe!'; - 正式为7Xww*kY^lOW%
+ALTER USER postgres PASSWORD '123qwe!'; 
 \q # 退出
 sudo systemctl restart postgresql-10.service #重启服务
 ```
@@ -260,7 +260,7 @@ track_activity_query_size = 4096
 
 ```
 #EOD生产环境使用1个小时，因为可能有大的事务存在。
-#启用这个配置项主要是因为有代码失误，会导致类似问题：https://jira.gridsum.com/browse/EOD-2931
+#启用这个配置项主要是因为有代码失误，会导致类似问题:
 idle_in_transaction_session_timeout = 0        # in milliseconds, 0 is disabled
 
 ```
