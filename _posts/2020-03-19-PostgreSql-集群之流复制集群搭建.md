@@ -79,6 +79,7 @@ gs-server-7296: 从服务器
   ```
 - **生产服务器上，则执行如下**
 >若在生产环境中没有条件进行数据库重启，也可以使用 pg_ctl reload 指令重新加载配置
+  
   ```
   sudo systemctl reload postgresql-10
   ```
