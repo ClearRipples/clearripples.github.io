@@ -1,9 +1,9 @@
 ```
 ---
 layout:     post
-title:      PostgreSQL 集群之pgpool
+title:      PostgreSQL运维那些事儿(三)
 subtitle:   pgpool 常用命令
-date:       2020-03-31
+date:       2020-04-01
 author:     Wright Liang
 header-img: img/post-bg-debug.png
 catalog: true
