@@ -1,4 +1,3 @@
-```
 ---
 layout:     post
 title:      PostgreSQL运维那些事儿(三)
@@ -10,7 +9,6 @@ catalog: true
 tags:
     - PostgreSQL
 ---
-```
 
 ### 执行在线恢复
 
